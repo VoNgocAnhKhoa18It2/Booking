@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item
+        android:id="@+id/phong"
+        android:title="Room"
+        android:icon="@drawable/ic_room_black_24dp"/>
+    <item
+        android:id="@+id/signin"
+        android:title="Sign in"
+        android:icon="@drawable/ic_login_24dp"/>
+    <item
+        android:id="@+id/signup"
+        android:title="Sign up"
+        android:icon="@drawable/ic_sign_up_24dp"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Sign out"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+
+</menu>

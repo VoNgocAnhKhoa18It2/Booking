@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/DatTheme"
+    android:background="#263238"
+    tools:context=".DatPhongActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Contact Booking"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="#8E8989" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Gender :" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2" >
+
+                <RadioButton
+                    android:id="@+id/rbtnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Male"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Female"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="ID Card"
+            android:textColor="@color/white"
+            android:inputType="text|number"
+            android:textColorHint="#8E8989" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#8E8989" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtQG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:completionThreshold="1"
+            android:textColor="@color/white"
+            android:hint="Country"
+            android:textColorHint="#8E8989" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDateD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_today_black_24dp"
+                android:paddingRight="10dp"
+                android:text="Date Put"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtDateT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_today_black_24dp"
+                android:paddingLeft="10dp"
+                android:text="Date Pay"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room:"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvphong"
+            android:listSelector="@drawable/list_seleted"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_weight="1"
+            android:background="#FFFEFE"
+            tools:ignore="NestedScrolling" />
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="150dp"
+            android:background="@drawable/booking_bg"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Booking" />
+    </LinearLayout>
+</ScrollView>
